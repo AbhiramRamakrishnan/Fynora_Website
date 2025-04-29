@@ -1,0 +1,1110 @@
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #ffffff;
+}
+#header{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* UPDATED NAVBAR STYLE */
+
+.header{
+    background-color: white;
+    color: black;
+    z-index: 999;
+    position: fixed;
+}
+.navbar{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.navbar-brand{
+    width: 15%;
+    
+}
+.navbar-nav{
+    width: 95%;
+    float: right;
+    text-align: end;
+    justify-content: right;
+}
+.nav-item{
+    justify-content: space-between;
+    margin-right: 2%;
+}
+.nav-item:hover .nav-link{
+    color: #9e93ff;
+    transition: delay 0.3s ease;
+    border-top: 0.5px solid #9e93ff;
+    padding-top: 7px;
+}
+.nav-item .active{
+    color: #9e93ff;
+    transform: scale(1.03);
+    transition: transform 0.03s ease;
+}
+.nav-link{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: black;
+    transition: color 0.3s ease;
+}
+.navmenu-title{
+    margin-top: 1.5rem;
+
+    font-size: 1rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+}
+.navmenu-description{
+    margin-top: 1rem;
+
+    font-size: 0.7rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@media screen and (max-width: 768px) {
+    .navbar-nav{
+        width: 100%;
+        height: 40rem;
+        margin-left: 11%;
+        margin-top: 5%;
+        float: left;
+        justify-content: left;
+        align-items: start;
+    }
+    .nav-item{
+        margin-top: 7%;
+    }
+    .navbar-brand{
+        width: 40%;
+        padding-top: 2%;
+        margin-left: 0
+    }
+    .navbar{
+        padding-left: 0;
+    }
+    .navbar-toggler{
+        margin-right: 5%;
+        border: none;
+    }
+    .navbar-toggler:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    
+}
+
+
+
+
+/* hero design */
+
+.hero {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 5rem;
+  }
+  
+  .hero-bg {
+    background: radial-gradient(circle, rgba(72, 64, 163, 1) 0%, rgba(37, 22, 148, 0.98) 25%, rgba(31, 19, 138, 1) 50%, rgba(16, 6, 112, 1) 75%, rgba(0, 0, 66, 1) 100%);
+    position: relative;
+    padding-top: 13rem;
+    padding-bottom: 0rem;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .triangle-wrapper {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  
+  .triangle-image {
+    width: 20%; /* Or use % */
+    height: auto;
+    
+  }  
+  
+  .hero-content {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .brand-name-logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .brand-name {
+    font-size: 6rem;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgba(0, 0, 255, 0.241), 0 0 5px rgba(0, 0, 139, 0.279);
+
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+  }
+  .logo-img {
+    width: 6rem;
+    height: auto;
+    margin-top: 2%;
+    -webkit-filter: drop-shadow(8px 8px 8px #222);
+
+  }
+  .tagline {
+    margin-left: 3%;
+    margin-top: -0.5%;
+    z-index: 10;
+
+    font-size: 1rem;
+    font-family: "Lily Script One", system-ui;
+    font-weight: 350;
+    font-style: normal;
+  }
+  
+  .hero-content-container {
+    padding-left: 5rem; padding-right: 5rem;
+    padding-top: 2rem;
+  }
+  
+  .hero-content-title {
+    margin-top: 2.5rem;
+    font-size: 1.8rem;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+  }
+  
+  .hero-content-description {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .hero-content-cta {
+    background-color: #2f2872;
+    color: #ffffff;
+    border-radius: 3rem;
+    border: none;
+    padding-left: 1.3rem; padding-right: 1.3rem;
+    padding-top: 0.3rem; padding-bottom: 0.3rem;
+    margin-top: 1.9rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    font-size: 0.8rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .hero-content-cta:hover {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+    background-color: #4b42a8; /* slightly lighter purple */
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(75, 66, 168, 0.6);
+  }
+
+  
+  @media (max-width: 768px) {
+    .hero-bg{
+        padding-top: 10rem;
+    }
+    .triangle-image {
+        width: 60%;
+    }
+    .hero-content{
+        padding-top: 4rem;
+        margin-bottom: 10rem;
+    }
+    .brand-name-logo{
+        gap: 1rem;
+    }
+    .brand-name {
+        font-size: 3.5rem;
+    }
+    .logo-img {
+        width: 4rem;
+        margin-top: 3%;
+    }
+    .tagline {
+        font-size: 0.8rem;
+        margin-right: 5%;
+        margin-top: -1.4%;
+    }
+    .hero-content-container{
+        padding-left: 3rem; padding-right: 3rem;
+        padding-top: 1.8rem;
+    }
+    .hero-content-title {
+      font-size: 1.7rem;
+    }
+    .hero-content-description {
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+    .hero-content-cta {
+      font-size: 0.88rem;
+      margin-top: 4rem;
+    }
+  }
+  
+
+
+/* feature design */
+
+#features{
+    scroll-margin-top: 9.2rem;
+}
+.features-container{
+    margin-top: 10rem;
+    padding-left: 5rem; padding-right: 5rem;
+    padding-bottom: 2rem;
+}
+.features-container-text{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.features-container-title{
+    margin-bottom: 10rem;
+    font-size: 2rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.features-container-title-span{
+    color: #e5007e;
+}
+.circle-features{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    background-color: #e5007e;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    transform: translateY(-214%);
+    text-align: center;
+}
+.circle2-features{
+    width: 2rem;
+    height: 1.3rem;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #b3186da3;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transform: translateY(91%);
+}
+.feature-cards{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.feature-cards-card{
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1rem;
+    padding-top: 2rem; padding-bottom: 2rem;
+    padding-left: 2rem; padding-right: 2rem;
+    margin-left: auto; margin-right: auto;
+    transition-delay: 1s ease;
+}
+.feature-cards-card:hover{
+    border: 2px solid;
+    border-color: #e5007e;
+}
+.features-icons{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: -1rem;
+}
+.feature-cards-card-title{
+    text-align: center;
+    width: 10rem;
+    margin: auto;
+
+    font-size: 1.4rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.feature-cards-card-description{
+    font-size: 0.9rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .features-container{
+        margin-top: 6rem;
+        padding-left: 3rem; padding-right: 3rem;
+    }
+    .features-container-text{
+        font-size: 0.7rem;
+    }
+    .feature-cards{
+        display: block;
+        margin: auto;
+        width: 75%;
+    }
+    .feature-cards-card{
+        margin-top: 5rem; margin-bottom: 5rem;
+        margin-left: auto; margin-right: auto;
+    }
+}
+
+
+/* service section design */
+
+#service{
+}
+.service{
+    height: 57rem;
+    overflow: hidden;
+    border-bottom-right-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+.service-container{
+    padding-top: 9.1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+.service-text{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    z-index: 10;
+}
+.service-title{
+    font-size: 2rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    z-index: 10;
+}
+.service-title-span{
+    color: #f07c01;
+}
+.service-description{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    z-index: 10;
+}
+.service-row{
+    gap: 2.6rem;
+    z-index: 10;
+}
+.service-card{
+    width: 16rem;
+    height: 30rem;
+    align-items: center;
+    border-radius: 0.6rem;
+    background-color: #E6DFD7;
+    z-index: 10;
+    position: static;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    overflow: hidden;
+}
+.service-card:hover{
+    transform: scale(1.03) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+}
+.service-image-div{
+    width: 100%;
+    height: 10.25rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.6rem;
+}
+.service-img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 0.6rem;
+    border-top-right-radius: 0.6rem;
+}
+.service-card-container{
+    padding-left: 1rem; padding-right: 1rem;
+    padding-bottom: 1rem; padding-top: 1rem;
+}
+.service-card-title{
+    font-size: 1.5rem;
+    color: #2f2872;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-align: left;
+    margin-left: 0.7rem;
+}
+.service-card-description{
+    font-size: 0.8rem;
+    margin-left: 0.8rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.service-card-description-points{
+    font-size: 0.7rem;
+    margin-left: -0.8rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.semicircle-container{
+    z-index: 5;
+}
+.semicircle{
+    bottom: 0;
+    left: 0;
+    width: 150vw;
+    height: 65rem;
+    margin-top: -15rem;
+    background-color: #F07C01;
+    border-top-left-radius: 100% 100%;
+    border-top-right-radius: 100% 100%;
+    margin-left: -24rem;
+    z-index: 5;
+    position: static;
+}
+@media screen and (max-width: 768px) {
+    .service{
+        height: 190rem;
+    }
+    .service-container{
+        padding-left: 3rem; padding-right: 3rem;
+    }
+    .service-text{
+        font-size: 0.7rem;
+    }
+    .service-title{
+        font-size: 1.8rem;
+    }
+    .service-description{
+        font-size: 0.8rem;
+        margin-bottom: 4rem;
+    }
+    .service-card{
+        width: 18rem;
+        height: 29rem;
+        margin: auto;
+    }
+    .service-image-div{
+        width: 100%;
+        height: 10rem;
+    }
+    .service-card-title{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-top: 0.5rem;
+    }
+    .service-card-description{
+        font-size: 0.8rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        width: 13rem;
+    }
+    .service-card-description-points{
+        font-size: 0.7rem;
+        margin-top: 0;
+    }
+    .semicircle{
+        margin-top: -145rem;
+        margin-left: -27rem;
+        width: 280vw;
+        height: 150rem;
+        background-image: linear-gradient(#f07c01,#de9445,#e19a4d,#e5ab6e,#e5c099,#e0ceb9,#e7d7c6,#efe9e3,#ffffff);
+    }
+}
+
+/* approach design */
+
+.approach-container{
+    padding-top: 12rem;
+    padding-left: 5rem; padding-right: 5rem;
+    padding-bottom: 4rem;
+}
+.approach-text{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.approach-title{
+    font-size: 2rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.approach-title-span{
+    color: #f07c01;
+}
+.approach-description{
+    margin-top: 3rem;
+
+    font-size: 0.9rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+@media screen and (max-width: 768px){
+    .approach-container{
+        padding-left: 3rem; padding-right: 3rem;
+    }
+    .approach-text{
+        font-size: 0.7rem;
+    }
+    .approach-title{
+        font-size: 1.4rem;
+    }
+    .approach-title-span{
+        display: flex;
+    }
+    .approach-description{
+        font-size: 0.9rem;
+    }
+}
+
+
+/* contact design */
+
+.swal2-popup-custom {
+    border-radius: 40px !important; /* Adjust corner roundness */
+    box-shadow: 0 0 30px rgba(47, 40, 114, 0.2);
+    padding: 2rem;
+}
+.contact-container{
+    padding-top: 10rem;
+    padding-left: 5rem; padding-right: 5rem;
+    padding-bottom: 2rem;
+}
+.contact-text{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.contact-title{
+    font-size: 2.5rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.contact-title-span{
+    color: #2f2872;
+}
+.contact-description{
+    font-size: 1rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 3rem;
+}
+.contact-description-span{
+    color: #2f2872;
+}
+.contact-form{
+    width: 25rem;
+}
+.contact-form-input{
+    font-size: 0.8rem;
+    padding-left: 1rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 0.5rem;
+    margin-bottom: 1.7rem;
+    border-color: #2f2872;
+}
+.contact-form-submit{
+    font-size: 0.8rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+input[type=text]{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    border: 0.02rem solid;
+}
+input[type=email]{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    border: 0.02rem solid;
+}
+input[type=tel]{
+    width: 15rem;
+    height: 2rem;
+    border-radius: 1.5rem;
+    border: 0.02rem solid;
+}
+textarea{
+    width: 15rem;
+    height: 5rem;
+    border-radius: 1.5rem;
+    border: 0.02rem solid;
+    padding-top: 0.5rem;
+}
+input[type=submit] {
+   width: 6rem;
+   height: 2rem;
+   border-radius: 2rem;
+   background-color: #2f2872;
+   color: white;
+   margin-left: 0.5rem;
+   text-align: center;
+   border: none;
+   transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+  
+input[type=text]:hover , input[type=email]:hover , input[type=tel]:hover , textarea:hover{
+    border: 0.1rem solid;
+    border-color: #009fe3;
+    filter: blur();
+}
+  
+.contact_detail-content-title{
+    font-size: 1rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 0.3rem;
+    display: flex;
+    margin-top: 0.2rem;
+}
+.contact_detail-content-detail{
+    color: black;
+    text-decoration: none;
+
+    font-size: 0.8rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+
+    margin-bottom: 2rem;
+    margin-left: 2.3rem;
+}
+.contact_detail-content-detail-a{
+    text-decoration: none;
+    display: inline-block;
+    width: auto;
+}
+.circle{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #2f2872;
+    margin-right: 0.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.circle:hover ,.circle2:hover , input[type=submit]:hover {
+    background-color: #009fe35c;
+    transition: transform 0.3s ease;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(75, 66, 168, 0.6);
+}
+.circle2{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #2f2872;
+    margin-right: 0.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.contact_detail-icon-email{
+    width: 1rem;
+    margin-top: 0.3rem;
+}
+.contact_detail-icon-phone{
+    width: 0.9rem;
+    margin-top: 0.3rem;
+}
+.contact_detail-icon-location{
+    width: 0.8rem;
+    margin-top: 0.3rem;
+}
+.contact_details-icons{
+    display: flex;
+    margin-top: 2.3rem;
+    margin-left: 2.5rem;
+    gap: 1rem;
+}
+.contact_detail-icon-instagram{
+    width: 1rem;
+    margin-top: 0.2rem;
+}
+.contact_detail-icon-whatsapp{
+    width: 1.1rem;
+    margin-top: 0.2rem;
+}
+.contact_detail-icon-facebook{
+    width: 1.1rem;
+    margin-top: 0.2rem;
+}
+.contact_detail-icon-youtube{
+    width: 1.1rem;
+    margin-top: 0.2rem;
+}
+.contact-details{
+    margin-left: 20rem;
+}
+@media screen and (max-width: 768px) {
+    .contact-form{
+        margin: auto;
+        width: 58vw;
+    }
+    .contact-container{
+        padding-left: 3rem; padding-right: 3rem;
+    }
+    .contact-text{
+        font-size: 0.7rem;
+    }
+    .contact-title{
+        font-size: 2.5rem;
+    }
+    .contact-description{
+        font-size: 0.9rem;
+        margin-bottom: 4rem;
+    }
+    .contact-column{
+        width: 58vw;
+        margin: auto;
+        margin-bottom: 5rem;
+    }
+    .contact-form-form{
+        width: 58vw;
+        margin: auto;
+    }
+    .contact-details{
+        width: 50vw;
+        margin: auto;
+    }
+    .contact-details-column{
+        width: 70vw;
+        margin: auto;
+    }
+    .contact-details-icons{
+        width: 80vw;
+        margin-top: auto;
+    }
+    .contact_detail-icon-instagram{
+        width: 1rem;
+        margin-top: 0.3rem;
+    }
+    .contact_detail-icon-whatsapp{
+        width: 1.1rem;
+        margin-top: 0.3rem;
+    }
+    .contact_detail-icon-facebook{
+        width: 1.1rem;
+        margin-top: 0.35rem;
+    }
+    .contact_detail-icon-youtube{
+        width: 1.1rem;
+        margin-top: 0.32rem;
+    }
+}
+
+/* about design */
+
+.about-container{
+    padding-top: 10rem;
+    padding-left: 5rem; padding-right: 5rem;
+}
+.about-text{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.about-title{
+    font-size: 2.2rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    margin-bottom: 1.5rem;
+}
+.about-title-span{
+    color: #009fe3;
+}
+.about-description{
+    font-size: 0.9rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+.about-title-2{
+    font-size: 1.7rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.about-title-3{
+    font-size: 1.5rem;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+.about-description-3{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.about-title-4{
+    margin-top: 8rem;
+    margin-bottom: 1.1rem;
+}
+.team-cards-container{
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 6rem;
+    margin-bottom: 5rem;
+}
+.team-card{
+    width: 18rem;
+    height: 23rem;
+    padding: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 1px 2.5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+.team-card:hover{
+    transform: scale(1.03) rotateX(5deg) rotateY(5deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.circle4{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #009fe3;
+    margin: auto;
+    margin-top: 0.8rem;
+}
+.team-card-user_icon{
+    width: 1rem;
+    margin-bottom: 0.2rem;
+}
+.about-title-5{
+    font-size: 1.15rem;
+    margin-top: 1rem;
+    height: 2rem;
+    
+}
+.team-card-icons{
+    display: flex;
+    margin: auto;
+    gap: 0.2rem;
+    margin-top: 2rem;
+}
+.circle3{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    background-color: #009fe3;
+    text-align: center;
+    margin: auto;
+}
+.about-description-5{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.about-team-container{
+    width: 70%;
+    height: 65%;
+    margin-left: auto; margin-right: auto;
+}
+.about-card-position{
+    color: #000000af;
+}
+.about-team-rectangle{
+    width: 100%;
+    height: 0.2rem;
+    background-color: #009fe3;
+    margin-left: auto; margin-right: auto;
+    margin-top: 0.3rem; margin-bottom: 0.2rem;
+}
+.about-team-description-container{
+    width: 100%;
+    padding-top: 1rem;
+}
+.about-team-description{
+    text-align: center;
+
+    font-size: 0.6rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+@media screen and (max-width: 768px) {
+    .about-container{
+        padding-left: 3rem; padding-right: 3rem;
+    }
+    .team-cards-container{
+        display: block;
+        align-items: center;
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .team-card{
+        margin-bottom: 3rem;
+        margin-left: auto; margin-right: auto;
+        padding-top: 2rem;
+    }
+    .about-title-5{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+}
+  
+
+/*footer*/
+
+.footer{
+    background-color: #777586;
+    height: auto;
+    margin-top: 3rem;
+}
+.footer-container{
+    width: 40%;
+    margin: auto;
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+}
+.footer-icons{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+    margin: auto;
+}
+.footer-icons-icon{
+    width: 1.8rem;
+}
+.footer-copyright{
+    margin-top: 1.5rem;
+}
+.footer-copyright-text{
+    color: #ffffff;
+    text-align: center;
+
+    font-size: 1rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+@media screen and (max-width: 768px) {
+    .footer-container{
+        width: 80%;
+        padding-top: 2.5rem;
+    }
+    .footer-icons{
+        width: auto;
+        gap: 0rem;
+        justify-content: space-evenly;
+    }
+    .footer-icons-icon{
+        width: 1.4rem;
+    }
+    .footer-copyright{
+        margin-top:2rem;
+        margin-bottom: 1rem;
+    }
+    .footer-copyright-text{
+        font-size: 0.8rem;
+    }
+}

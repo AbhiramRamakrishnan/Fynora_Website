@@ -15,7 +15,7 @@
 
     <link rel="stylesheet" href="assets/style/style.css">
 
-    <!-- Ajax Link for form submission -->
+    <!-- Ajax Link -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     
     <!-- team member card icons -->
@@ -227,7 +227,7 @@
             <div class="row contact-row">
                 <div class="col-md-6 contact-column">
                     <div class="contact-form">
-                        <form id="submit-form" class="contact-form-form" action="">
+                        <form id="submit-form" class="contact-form-form" action="/submit">
                             <input type="text" id="name" name="name" placeholder="Your name.." class="contact-form-input">
                             <input type="email" id="email" name="email" placeholder="Your email.." class="contact-form-input">
                             <input type="tel" id="mobile" name="mobile" placeholder="Your mobile number.." class="contact-form-input">
@@ -354,7 +354,7 @@
             });
 
             $.ajax({
-                url:"",
+                url:"https://fynora-website-backend.onrender.com",
                 data:$("#submit-form").serialize(),
                 method:"post",
                 success:function (response){

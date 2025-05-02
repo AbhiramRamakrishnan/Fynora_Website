@@ -522,19 +522,11 @@ body{
 }
 .semicircle-container{
     z-index: 5;
+    margin-top: -15rem;
 }
 .semicircle{
-    bottom: 0;
-    left: 0;
-    width: 150vw;
-    height: 65rem;
-    margin-top: -15rem;
-    background-color: #F07C01;
-    border-top-left-radius: 100% 100%;
-    border-top-right-radius: 100% 100%;
-    margin-left: -24rem;
-    z-index: 5;
-    position: static;
+    width: 190%;
+    margin-left: -45%;
 }
 @media screen and (max-width: 768px) {
     .service{
@@ -553,10 +545,15 @@ body{
         font-size: 0.8rem;
         margin-bottom: 4rem;
     }
+    .service-columns{
+        margin-left: auto;
+        margin-right: auto;
+    }
     .service-card{
-        width: 18rem;
+        width: 80%;
         height: 29rem;
-        margin: auto;
+        margin-left: auto;
+        margin-right: auto;
     }
     .service-image-div{
         width: 100%;
@@ -578,11 +575,12 @@ body{
         margin-top: 0;
     }
     .semicircle{
-        margin-top: -145rem;
-        margin-left: -27rem;
-        width: 280vw;
+        margin-top: -127rem;
+        width: 350%;
         height: 150rem;
-        background-image: linear-gradient(#f07c01,#de9445,#e19a4d,#e5ab6e,#e5c099,#e0ceb9,#e7d7c6,#efe9e3,#ffffff);
+        margin-left: -125%;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
     }
 }
 

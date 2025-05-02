@@ -348,6 +348,53 @@
         $("#submit-form").submit((e)=>{
             e.preventDefault();
             
+            // Form field values
+            const name = $("#name").val().trim();
+            const email = $("#email").val().trim();
+            const phone = $("#mobile").val().trim();
+            const message = $("#subject").val().trim();
+
+            // Validation patterns
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            const phonePattern = /^[0-9]{10}$/; // Accepts 10 digits
+
+            // Empty field check
+            if (name === "" || email === "" || phone === "" || message === "") {
+                Swal.fire({
+                    icon: 'warning',
+                    title: 'All fields are required!',
+                    background: '#fff5f5',
+                    color: '#2f2872',
+                    iconColor: '#f59e0b',
+                });
+                return;
+            }
+
+            // Email format check
+            if (!emailPattern.test(email)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid Email!',
+                    text: 'Please enter a valid email address.',
+                    background: '#fff5f5',
+                    color: '#2f2872',
+                    iconColor: '#ef4444',
+                });
+                return;
+            }
+
+            // Phone number format check
+            if (!phonePattern.test(phone)) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Invalid Phone Number!',
+                    text: 'Enter a 10-digit number without spaces or symbols.',
+                    background: '#fff5f5',
+                    color: '#2f2872',
+                    iconColor: '#ef4444',
+                });
+                return;
+            }
             Swal.fire({
                 title: 'Submitting...',
                 text: 'Please wait while we process your request.',

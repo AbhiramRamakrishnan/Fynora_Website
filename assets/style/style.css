@@ -331,11 +331,10 @@ body{
     height: 2.5rem;
     border-radius: 2.5rem 2.5rem 0 0;
     background-color: #e5007e;
-    margin-top: auto;
+    margin-top: -30.5%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: auto;
-    transform: translateY(-214%);
     text-align: center;
 }
 .circle2-features{
@@ -343,15 +342,15 @@ body{
     height: 1.3rem;
     border-radius: 1rem 1rem 0 0;
     background-color: #b3186da3;
-    margin-top: auto;
+    margin-top: 24%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    transform: translateY(91%);
+}
+.feature-col{
+    padding-left: 4%; padding-right: 4%;
 }
 .feature-cards{
-    display: flex;
-    justify-content: space-around;
     margin-bottom: 2rem;
 }
 .feature-cards-card{
@@ -359,7 +358,6 @@ body{
     height: 20rem;
     border-radius: 1rem;
     padding-top: 2rem; padding-bottom: 2rem;
-    padding-left: 2rem; padding-right: 2rem;
     margin-left: auto; margin-right: auto;
     transition-delay: 1s ease;
 }
@@ -384,6 +382,11 @@ body{
     font-style: normal;
 }
 .feature-cards-card-description{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    text-align: center;
+
     font-size: 0.9rem;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -400,21 +403,20 @@ body{
         font-size: 0.7rem;
     }
     .feature-cards{
-        display: block;
-        margin: auto;
-        width: 75%;
+        width: 100%;
+        margin-left: auto; margin-right: auto;
+    }
+    .feature-col{
+        width: 100%;
     }
     .feature-cards-card{
         margin-top: 5rem; margin-bottom: 5rem;
-        margin-left: auto; margin-right: auto;
     }
 }
 
 
 /* service section design */
 
-#service{
-}
 .service{
     height: 57rem;
     overflow: hidden;
@@ -461,7 +463,7 @@ body{
 }
 .service-card{
     width: 16rem;
-    height: 30rem;
+    height: 32rem;
     align-items: center;
     border-radius: 0.6rem;
     background-color: #E6DFD7;
@@ -546,11 +548,12 @@ body{
         margin-bottom: 4rem;
     }
     .service-columns{
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
     .service-card{
-        width: 80%;
+        width: 100%;
         height: 29rem;
         margin-left: auto;
         margin-right: auto;
@@ -851,20 +854,23 @@ input[type=text]:hover , input[type=email]:hover , input[type=tel]:hover , texta
         margin-bottom: 4rem;
     }
     .contact-column{
-        width: 58vw;
+        width: 100%;
         margin: auto;
         margin-bottom: 5rem;
     }
+    .contact-form{
+        width: 100%;
+    }
     .contact-form-form{
-        width: 58vw;
+        width: 100%;
         margin: auto;
     }
     .contact-details{
-        width: 50vw;
+        width: 100%;
         margin: auto;
     }
     .contact-details-column{
-        width: 70vw;
+        width: 100%;
         margin: auto;
     }
     .contact-details-icons{
@@ -881,11 +887,9 @@ input[type=text]:hover , input[type=email]:hover , input[type=tel]:hover , texta
     }
     .contact_detail-icon-facebook{
         width: 1.1rem;
-        margin-top: 0.35rem;
     }
     .contact_detail-icon-youtube{
         width: 1.1rem;
-        margin-top: 0.32rem;
     }
 }
 
@@ -944,7 +948,7 @@ input[type=text]:hover , input[type=email]:hover , input[type=tel]:hover , texta
 }
 .team-cards-container{
     display: flex;
-    width: 80vw;
+    width: 100%;
     justify-content: space-around;
     margin: auto;
     margin-top: 6rem;
@@ -1039,6 +1043,8 @@ input[type=text]:hover , input[type=email]:hover , input[type=tel]:hover , texta
         margin-top: 5rem;
     }
     .team-card{
+        width: 100%;
+        max-width: 20rem;
         margin-bottom: 3rem;
         margin-left: auto; margin-right: auto;
         padding-top: 2rem;

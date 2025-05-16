@@ -121,7 +121,7 @@ body{
 
 .hero {
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
     z-index: 0;
     padding-bottom: 5rem;
@@ -203,7 +203,7 @@ body{
   }
   
   .hero-content-title {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     font-size: 1.8rem;
     font-family: "Julius Sans One", sans-serif;
     font-weight: 500;
@@ -226,7 +226,7 @@ body{
     border: none;
     padding-left: 1.3rem; padding-right: 1.3rem;
     padding-top: 0.3rem; padding-bottom: 0.3rem;
-    margin-top: 1.9rem;
+    margin-top: 1.5rem;
     margin-left: 0.5rem;
     cursor: pointer;
     position: relative;
@@ -250,6 +250,7 @@ body{
     background-color: #4b42a8; /* slightly lighter purple */
     transform: scale(1.05);
     box-shadow: 0 0 12px rgba(75, 66, 168, 0.6);
+    filter: blur();
   }
 
   
@@ -466,7 +467,7 @@ body{
     height: 32rem;
     align-items: center;
     border-radius: 0.6rem;
-    background-color: #E6DFD7;
+    background-color: #f5fafa;
     z-index: 10;
     position: static;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -476,8 +477,9 @@ body{
     overflow: hidden;
 }
 .service-card:hover{
-    transform: scale(1.03) rotateX(5deg) rotateY(5deg);
-    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5);
+    /*transform: scale(1.03) rotateX(5deg) rotateY(5deg); -->  not working due to AOS */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    filter: blur();
 }
 .service-image-div{
     width: 100%;

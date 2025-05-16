@@ -21,3 +21,11 @@ window.onscroll = () => {
         }
     });
 };
+
+
+// AoS (Animate on Scroll) initialization
+
+AOS.init({
+    duration: 1000, // animation duration in ms
+    once: false, // whether animation should happen only once
+  });

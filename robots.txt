@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://fynoraentertainments.com/sitemap.xml
+

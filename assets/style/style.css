@@ -349,6 +349,7 @@ body{
   box-sizing: border-box;
   height: auto;
   width: 50%;
+  max-width: 350px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -459,6 +460,7 @@ body{
     }
     .left-panel{
         width: 100%;
+        max-width: none;
     }
     .center-panel{
         padding-top: 1rem;

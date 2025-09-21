@@ -383,7 +383,21 @@ body{
   font-style: normal;
   font-size: 15px;
 }
-
+.event-contact-btn{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: #514c78;
+    margin-right: 0.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+}
+.event-contact-insta{
+    width: 1rem;
+    margin-top: 0.4rem;
+}
 .center-panel {
   flex: 1 1 350px;
   display: flex;

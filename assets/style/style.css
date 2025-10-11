@@ -328,7 +328,7 @@ body{
 }
 .event-card-container {
   display: flex;
-  height: 350px;
+  height: 400px;
   width: 88vw;
   box-sizing: border-box;
   background-color: #EBEAEA;
@@ -376,27 +376,85 @@ body{
   font-size: 18px;
 }
 
+.dateLoc{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: 30%;
+    width: auto;
+    margin-top: 1rem;
+}
+
+.date-container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    height: auto;
+    width: 50%;
+    background-color: #F7F3F3;
+}
+
+.dateTitle{
+    font-size: 1rem;
+}
+
+.dateContent{
+    font-size: 12px;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.loc-container{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+    height: auto;
+    width: 50%;
+    background-color: #F7F3F3;
+}
+
+.locTitle{
+    font-size: 1rem;
+}
+
+.locContent{
+    font-size: 12px;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .event-contact{
     margin-top: 1rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 15px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    display: flex;
+}
+.event-btn{
+    display: row;
 }
 .event-contact-btn{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     border-radius: 50%;
     background-color: #514c78;
     margin-right: 0.5rem;
     text-align: center;
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    margin-top: 1rem;
+    margin-top: 0.2rem;
 }
 .event-contact-insta{
-    width: 1rem;
-    margin-top: 0.4rem;
+    width: 0.8rem;
 }
 .center-panel {
   flex: 1 1 350px;

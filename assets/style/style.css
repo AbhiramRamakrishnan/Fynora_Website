@@ -534,6 +534,9 @@ body{
         width: 100%;
         max-width: none;
     }
+    .event-contact{
+        flex-direction: column;
+    }
     .center-panel{
         padding-top: 1rem;
         width: 100%;

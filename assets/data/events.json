@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "title": "UFORIA",
+    "image": "assets/images/events/uforia/img10.jpg",
+    "banner": "assets/images/events/uforia/img10.jpg",
+    "shortDescription": "",
+    "description": "Get ready to witness the pulse of Kerala’s indie scene as Uforia 2025 takes over the grand outdoors of Lulu Mall, Trivandrum! This isn’t just another concert — it’s a full-blown indie revolution, where raw energy, electrifying performances, and pure musical freedom collide. From powerful stage moments to unforgettable crowd vibes, Uforia promises an evening that will redefine live music experiences in the state.",
+    "venue": "LULU Mall Trivandrum",
+    "date": "2025-12-20",
+    "artists": ["Bloodywood", "Avial", "Arogya", "Jhanu", "Crishna", "Iham Kavyam"],
+    "gallery": [
+      "assets/images/events/uforia/img2.jpg",
+      "assets/images/events/uforia/img3.jpg",
+      "assets/images/events/uforia/img4.jpg",
+      "assets/images/events/uforia/img5.jpg",
+      "assets/images/events/uforia/img6.jpg",
+      "assets/images/events/uforia/img7.jpg",
+      "assets/images/events/uforia/img8.jpg",
+      "assets/images/events/uforia/img9.jpg",
+      "assets/images/events/uforia/img10.jpg"
+    ],
+    "bookingLink": "https://in.bookmyshow.com/events/uforia/ET00468281?webview=true",
+    "website": "https://uforiaofficial.com",
+    "link": "eventDetails.html?id=1"
+  }
+]

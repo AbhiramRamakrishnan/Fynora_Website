@@ -1,0 +1,115 @@
+/* feature design */
+
+#features{
+    scroll-margin-top: 9.2rem;
+}
+.features-container{
+    margin-top: 10rem;
+    padding-left: 0rem; padding-right: 0rem;
+    padding-bottom: 2rem;
+}
+.features-container-text{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.features-container-title{
+    margin-bottom: 10rem;
+    font-size: 2rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.features-container-title-span{
+    color: #e5007e;
+}
+.circle-features{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    background-color: #e5007e;
+    margin-top: -30.5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
+    text-align: center;
+}
+.circle2-features{
+    width: 2rem;
+    height: 1.3rem;
+    border-radius: 1rem 1rem 0 0;
+    background-color: #b3186da3;
+    margin-top: 24%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.feature-col{
+    padding-left: 4%; padding-right: 4%;
+}
+.feature-cards{
+    margin-bottom: 2rem;
+}
+.feature-cards-card{
+    width: 15rem;
+    height: 20rem;
+    border-radius: 1rem;
+    padding-top: 2rem; padding-bottom: 2rem;
+    margin-left: auto; margin-right: auto;
+    transition-delay: 1s ease;
+}
+.feature-cards-card:hover{
+    border: 2px solid;
+    border-color: #e5007e;
+}
+.features-icons{
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: -1rem;
+}
+.feature-cards-card-title{
+    text-align: center;
+    width: 10rem;
+    margin: auto;
+
+    font-size: 1.4rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.feature-cards-card-description{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    text-align: center;
+
+    font-size: 0.9rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .features-container{
+        margin-top: 6rem;
+        padding-left: 3rem; padding-right: 3rem;
+    }
+    .features-container-text{
+        font-size: 0.7rem;
+    }
+    .feature-cards{
+        width: 100%;
+        margin-left: auto; margin-right: auto;
+    }
+    .feature-col{
+        width: 100%;
+    }
+    .feature-cards-card{
+        margin-top: 5rem; margin-bottom: 5rem;
+    }
+}

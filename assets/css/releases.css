@@ -1,0 +1,251 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #111;
+}
+
+/* Hero Section */
+.release-hero {
+  position: relative;
+  width: 100%;
+  height: 40vh;
+  overflow: hidden;
+  margin-top: 6.5rem;
+}
+
+.release-hero .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.release-hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(20, 10, 40, 0.4) 40%,
+    rgba(0, 0, 0, 0.75) 100%
+  ),
+  linear-gradient(
+    90deg,
+    rgba(50, 0, 80, 0.25) 0%,
+    rgba(0, 0, 0, 0.5) 100%
+  );
+}
+
+
+.release-hero .hero-text {
+  position: absolute;
+  left: 10%;
+  bottom: 15%;
+  color: #fff;
+}
+
+.release-hero .hero-text h1 {
+  font-size: 3rem;
+  margin: 0;
+  letter-spacing: 2px;
+  font-family: "Julius Sans One", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* YouTube Button */
+.youtube-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.youtube-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px; /* space between logo and text */
+  background: #ff0000;
+  color: #fff;
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 30px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+
+.youtube-icon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+
+
+/* Release Cards */
+.release-cards {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.release-card {
+  position: relative;
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 320px;
+  height: 220px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.release-card:hover {
+  transform: translateY(-8px);
+}
+
+.release-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlay content */
+.overlay-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+  background: 
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.45) 0%,         /* deeper shade at top */
+      rgba(255, 94, 98, 0.4) 25%,     /* more visible magenta */
+      rgba(117, 61, 255, 0.45) 55%,   /* stronger violet midtone */
+      rgba(0, 0, 0, 0.75) 100%        /* bold bottom shadow */
+    );
+  color: white;
+  text-align: center;
+}
+
+.overlay-content h2 {
+  font-size: 1.5rem;
+  font-family: "Julius Sans One", sans-serif;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* View Link */
+.view-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+  transition: opacity 0.3s ease, border-color 0.3s ease;
+}
+
+.view-link:hover {
+  color: #555;
+  border-color: #555;
+  text-decoration: none;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+/* Tablets & small laptops */
+@media (max-width: 992px) {
+  .release-hero {
+    height: 30vh;
+  }
+
+  .release-hero .hero-text h1 {
+    font-size: 2.4rem;
+    left: 8%;
+  }
+
+  .release-cards {
+    gap: 30px;
+    padding: 15px;
+  }
+
+  .release-card {
+    width: 280px;
+    height: 190px;
+  }
+}
+
+/* Mobile (portrait phones) */
+@media (max-width: 600px) {
+  .release-hero {
+    height: 25vh;
+    margin-top: 5.5rem;
+  }
+
+  .release-hero .hero-text {
+    left: 8%;
+    bottom: 10%;
+  }
+
+  .release-hero .hero-text h1 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+  }
+
+  .youtube-section {
+    margin: 25px 0;
+  }
+
+  .youtube-btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+    gap: 8px;
+  }
+
+  .youtube-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .release-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+  }
+
+  .release-card {
+    width: 90%;
+    height: 200px;
+  }
+
+  .overlay-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .view-link {
+    font-size: 0.8rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 400px) {
+  .release-hero {
+    height: 22vh;
+  }
+
+  .release-hero .hero-text h1 {
+    font-size: 1.7rem;
+  }
+
+  .release-card {
+    height: 180px;
+  }
+}

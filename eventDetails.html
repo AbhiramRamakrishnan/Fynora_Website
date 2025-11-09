@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fynora Entertainments | Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Fynora</title>
   <meta name="description" content="Delivering immersive, world-class event experiences through innovative concepts and flawless execution.">
   <meta name="robots" content="index, follow">
 
-  <!-- CSS Links -->
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
-  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/eventDetails.css">
   <link rel="stylesheet" href="assets/css/footer.css">
-
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
@@ -30,44 +29,87 @@
 
   <!-- AOS Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Ajax Link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-
 </head>
 
 <body>
-  <!-- HOME SECTION -->
-  <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="triangle-wrapper">
-        <img src="assets/images/hero-triangle-img.svg" alt="" class="triangle-image" data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000">
-      </div>              
-      <div class="hero-content">
-        <div class="brand-name-logo">
-          <h1 class="brand-name" data-aos="fade-right" data-aos-delay="100">FYNORA</h1>
-          <img src="assets/images/fynora-icon-bgremoved.png" alt="" class="logo-img" data-aos="fade-right" data-aos-delay="100">
-        </div>
-        <p class="tagline" data-aos="fade-right" data-aos-delay="100">"the voice of void and renaissance"</p>
-      </div>
-    </div>
-  
-    <div class="hero-content-container">
-      <h1 class="hero-content-title" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">Crafting Unforgettable Experiences That Resonate With Every Moment.</h1>
-      <p class="hero-content-description" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">Where bold ideas become breathtaking experiences — no matter where you are</p>
-      <a href="contact.html" class="hero-content-cta" data-aos="fade-up" data-aos-delay="800" data-aos-duration="3000">Contact Us</a>
+  <!-- Banner Section -->
+  <section class="event-banner">
+    <img id="event-banner-img" src="assets/images/default-banner.jpg" alt="Event Banner" />
+    <div class="banner-overlay"></div>
+    <div class="banner-text">
+      <h1 id="event-title">Event Title</h1>
+      <p id="event-venue">Venue: </p>
+      <p id="event-date">Date: </p>
     </div>
   </section>
 
+  <div class="cta">
+
+    <!-- Booking Button -->
+    <section class="booking-section">
+      <a id="booking-btn" href="https://in.bookmyshow.com/events/uforia/ET00468281?webview=true" class="btn">Book Now</a>
+    </section>
+
+    <!-- External Event Link -->
+    <section class="event-link">
+      <a id="event-website-link" href="https://uforiaofficial.com/" target="_blank" class="btn external-link">Visit Event Website</a>
+    </section>
+    
+  </div>
+  
+
+  <!-- Description -->
+  <section class="event-description container">
+    <h2>About the Event</h2>
+    <p id="event-description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. This is where event details go.
+    </p>
+  </section>
+
+  <!-- Artist Lineup -->
+  <section class="artist-lineup container">
+    <h2>Artist Lineup</h2>
+    <ul id="artist-list">
+      <li>Artist 1</li>
+      <li>Artist 2</li>
+      <li>Artist 3</li>
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="event-gallery container">
+    <h2>Gallery</h2>
+    <div class="gallery-grid" id="gallery-images">
+      <img src="assets/images/sample1.jpg" alt="Gallery Image" />
+      <img src="assets/images/sample2.jpg" alt="Gallery Image" />
+      <img src="assets/images/sample3.jpg" alt="Gallery Image" />
+    </div>
+    <!-- <a href="gallery.html" class="btn gallery-btn">View Full Gallery</a> -->
+  </section>
+
+
+
+
+
   <!-- JS -->
 
+  <!-- Lottie (optional if used on contact page) -->
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js"
+      type="module">
+    </script>
+  
+  
     <script src="https://kit.fontawesome.com/1f69d10539.js" crossorigin="anonymous"></script>  <!-- font awesome link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/eventDetails.js"></script>
     
     <script>
         AOS.init({

@@ -1,0 +1,213 @@
+/* ---------- HERO BANNER ---------- */
+.events-hero {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 6.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.events-hero .hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.events-hero .hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.25),
+      rgba(0, 0, 0, 0.45)
+    ),
+    linear-gradient(
+      135deg,
+      rgba(255, 0, 150, 0.35),
+      rgba(0, 102, 255, 0.35),
+      rgba(255, 120, 0, 0.35)
+    );
+  background-blend-mode: overlay;
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+  z-index: 2;
+}
+
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.events-hero .hero-content {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  max-width: 700px;
+  padding: 0 15px;
+  z-index: 3;
+}
+
+.events-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Julius Sans One", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+/* ---------- EVENTS SECTION ---------- */
+.events-section {
+  padding: 5px 20px 10px;
+  text-align: center;
+  background-color: #f9f9ff;
+}
+
+/* ---------- EVENTS GRID ---------- */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 280px));
+  gap: 25px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ---------- EVENT CARD ---------- */
+.event-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- EVENT CARD IMAGE ---------- */
+.event-card img {
+  width: 100%;
+  height: 76%;
+  object-fit: cover;
+}
+
+/* ---------- EVENT INFO ---------- */
+.event-info {
+  flex: 1;
+  padding: 15px 20px 10px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 6px;
+}
+
+.event-info h3 {
+  color: #2f2872;
+  font-size: 1.8rem;
+  margin-bottom: 2px;
+  font-weight: 600;
+  line-height: 1.3;
+  font-family: "Julius Sans One", sans-serif;
+  font-style: normal;
+}
+
+.event-info p {
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+.event-info .btn {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 3px 10px;
+  background: linear-gradient(135deg, #9e93ff, #ff6ea1);
+  color: #fff;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+}
+
+.event-info .btn:hover {
+  background: linear-gradient(135deg, #7c6df0, #ff5c8d);
+  transform: scale(1.05);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .events-hero {
+    margin-top: 5.4rem;
+    height: 25vh;
+  }
+
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+
+  .event-card {
+    height: auto;
+  }
+
+  .events-hero h1 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .events-hero {
+    height: 25vh;
+  }
+
+  .events-hero h1 {
+    font-size: 2.1rem;
+    margin-bottom: 1.2rem;
+    margin-left: 5rem;
+  }
+
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+  }
+
+  .event-card img {
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .event-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .event-info p {
+    font-size: 0.85rem;
+  }
+}

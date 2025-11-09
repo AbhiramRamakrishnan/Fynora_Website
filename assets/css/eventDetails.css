@@ -1,0 +1,264 @@
+/* ---------- EVENT BANNER ---------- */
+.event-banner {
+  position: relative;
+  width: 70%; 
+  height: 60vh; 
+  margin: 6.5rem auto 1rem auto; /* centers the banner */
+  border-bottom-left-radius: 2.5rem; 
+  border-bottom-right-radius: 2.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.event-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(70%);
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
+}
+
+.banner-text {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  color: #fff;
+}
+
+.banner-text h1 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+  margin-bottom: 10px;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.banner-text p {
+  font-size: 0.9rem;
+  margin: 2px 0;
+  font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.cta{
+  display: flex;
+  gap: 1rem;
+  margin: 2px 0;
+  padding-left: 15rem;
+  padding-right: 1rem;
+
+}
+
+/* ---------- BOOKING BUTTON ---------- */
+.booking-section {
+  padding-right: 0rem;
+}
+
+.booking-section .btn {
+  padding: 10px 22px;
+  border-radius: 25px;
+  background-color: #9e93ff;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.booking-section .btn:hover {
+  background-color: #7c6df0;
+}
+
+/* ---------- EVENT WEBSITE LINK ---------- */
+.event-link {
+  padding-left: 0rem;
+}
+
+.event-link .btn {
+  background-color: #ff8c00;
+  color: white;
+  padding: 10px 22px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.event-link .btn:hover {
+  background-color: #e67e00;
+}
+
+
+/* ---------- CONTENT SECTIONS ---------- */
+.container {
+  width: 100%;
+  margin: 0 auto 50px;
+  padding-left: 15rem;
+}
+
+.container h2 {
+  color: #2f2872;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  font-weight: 500;
+  font-family: "Julius Sans One", sans-serif;
+    font-style: normal;
+}
+
+.event-description p {
+  color: #444;
+  line-height: 1.6;
+  font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* ---------- ARTIST LINEUP ---------- */
+.artist-lineup ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.artist-lineup li {
+  background-color: #f3f2ff;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* ---------- GALLERY ---------- */
+.event-gallery .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 10px;
+}
+
+.event-gallery .gallery-grid img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Remove inner spacing */
+.event-gallery .gallery-grid img {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 20px;
+}
+
+/* ---------- MOBILE RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  /* Banner adjustments */
+  .event-banner {
+    width: 95%;              /* increase width */
+    height: 35vh;            /* reduce height */
+    margin-top: 5.3rem;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+  }
+
+  .banner-text {
+    left: 1.5rem;
+    bottom: 20px;
+  }
+
+  .banner-text h1 {
+    font-size: 1.8rem;
+  }
+
+  .banner-text p {
+    font-size: 0.7rem;
+  }
+
+  /* CTA buttons: stack vertically */
+  .cta {
+    flex-direction: row;
+    justify-content: left;
+    width: 95%;
+    gap: 1rem;
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+  }
+
+  .booking-section,
+  .event-link {
+    padding: 0;
+  }
+
+  .booking-section .btn,
+  .event-link .btn {
+    width: 100%;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  /* Container (About, Artists, Gallery) */
+  .container {
+    padding: 0 1.2rem; /* add side padding */
+  }
+
+  .container h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .event-description p {
+    font-size: 0.9rem;
+    text-align: justify;
+    padding: 0 1.5rem;
+  }
+
+  /* Artist lineup */
+  .artist-lineup ul {
+    justify-content: center;
+    padding: 0 1rem;
+    margin: 1.5rem 0;
+  }
+
+  .artist-lineup li {
+    padding: 8px 14px;
+    font-size: 0.9rem;
+  }
+
+  /* Gallery */
+  .event-gallery .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .gallery-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-banner {
+    height: 35vh;
+  }
+
+  .banner-text h1 {
+    font-size: 1.8rem;
+  }
+}

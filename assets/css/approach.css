@@ -1,0 +1,50 @@
+/* approach design */
+
+.approach-container{
+    padding-top: 10rem;
+    padding-left: 5rem; padding-right: 5rem;
+    padding-bottom: 4rem;
+}
+.approach-text{
+    font-size: 1rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.approach-title{
+    font-size: 2rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+.approach-title-span{
+    color: #f07c01;
+}
+.approach-description{
+    margin-top: 3rem;
+
+    font-size: 0.9rem;
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+@media screen and (max-width: 768px){
+    .approach-container{
+        padding-left: 3rem; padding-right: 3rem;
+    }
+    .approach-text{
+        font-size: 0.7rem;
+    }
+    .approach-title{
+        font-size: 1.4rem;
+    }
+    .approach-title-span{
+        display: flex;
+    }
+    .approach-description{
+        font-size: 0.9rem;
+    }
+}

@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fynora Entertainments | Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events | Fynora</title>
   <meta name="description" content="Delivering immersive, world-class event experiences through innovative concepts and flawless execution.">
   <meta name="robots" content="index, follow">
 
-  <!-- CSS Links -->
+  <!-- CSS -->
   <link rel="stylesheet" href="assets/css/global.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
-  <link rel="stylesheet" href="assets/css/hero.css">
+  <link rel="stylesheet" href="assets/css/events.css">
   <link rel="stylesheet" href="assets/css/footer.css">
-
 
   <!-- Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon_io/apple-touch-icon.png">
@@ -30,44 +29,48 @@
 
   <!-- AOS Library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Ajax Link -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-
 </head>
 
 <body>
-  <!-- HOME SECTION -->
-  <section class="hero" id="home">
-    <div class="hero-bg">
-      <div class="triangle-wrapper">
-        <img src="assets/images/hero-triangle-img.svg" alt="" class="triangle-image" data-aos="fade-right" data-aos-delay="200" data-aos-duration="2000">
-      </div>              
-      <div class="hero-content">
-        <div class="brand-name-logo">
-          <h1 class="brand-name" data-aos="fade-right" data-aos-delay="100">FYNORA</h1>
-          <img src="assets/images/fynora-icon-bgremoved.png" alt="" class="logo-img" data-aos="fade-right" data-aos-delay="100">
-        </div>
-        <p class="tagline" data-aos="fade-right" data-aos-delay="100">"the voice of void and renaissance"</p>
-      </div>
-    </div>
+  <!-- EVENTS SECTION -->
   
-    <div class="hero-content-container">
-      <h1 class="hero-content-title" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">Crafting Unforgettable Experiences That Resonate With Every Moment.</h1>
-      <p class="hero-content-description" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000">Where bold ideas become breathtaking experiences — no matter where you are</p>
-      <a href="contact.html" class="hero-content-cta" data-aos="fade-up" data-aos-delay="800" data-aos-duration="3000">Contact Us</a>
-    </div>
-  </section>
+    <!-- HERO SECTION -->
+    <section class="events-hero" data-aos="fade-down">
+      <div class="hero-overlay"></div>
+      <img src="assets/images/events/eventPage/eventBanner.jpeg" alt="Fynora Events Banner" class="hero-img" />
+      <div class="hero-content">
+        <h1>EVENTS</h1>
+      </div>
+    </section>
+
+
+    <!-- EVENTS GRID -->
+    <main class="events-section">
+      <div class="container">
+        <div id="events-grid" class="events-grid"></div>
+      </div>
+    </main>
+
 
   <!-- JS -->
 
+  <!-- Lottie (optional if used on contact page) -->
+    <script
+      src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.1/dist/dotlottie-wc.js"
+      type="module">
+    </script>
+  
+  
     <script src="https://kit.fontawesome.com/1f69d10539.js" crossorigin="anonymous"></script>  <!-- font awesome link -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/events.js"></script>
     
     <script>
         AOS.init({

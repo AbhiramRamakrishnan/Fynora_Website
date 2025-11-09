@@ -1,0 +1,180 @@
+/* hero design */
+
+.hero {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    padding-bottom: 5rem;
+  }
+  
+  .hero-bg {
+    background: radial-gradient(circle, rgba(72, 64, 163, 1) 0%, rgba(37, 22, 148, 0.98) 25%, rgba(31, 19, 138, 1) 50%, rgba(16, 6, 112, 1) 75%, rgba(0, 0, 66, 1) 100%);
+    position: relative;
+    padding-top: 13rem;
+    padding-bottom: 0rem;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+  }
+  
+  .triangle-wrapper {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+  }
+  
+  .triangle-image {
+    width: 20%; /* Or use % */
+    height: auto;
+    
+  }  
+  
+  .hero-content {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%;
+  }
+  .brand-name-logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .brand-name {
+    font-size: 6rem;
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px black, 0 0 25px rgba(0, 0, 255, 0.241), 0 0 5px rgba(0, 0, 139, 0.279);
+
+    font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 550;
+    font-style: normal;
+  }
+  .logo-img {
+    width: 6rem;
+    height: auto;
+    margin-top: 2%;
+    -webkit-filter: drop-shadow(8px 8px 8px #222);
+
+  }
+  .tagline {
+    margin-left: 3%;
+    margin-top: -0.5%;
+    z-index: 10;
+
+    font-size: 1rem;
+    font-family: "Lily Script One", system-ui;
+    font-weight: 350;
+    font-style: normal;
+  }
+  
+  .hero-content-container {
+    padding-left: 5rem; padding-right: 5rem;
+    padding-top: 2rem;
+  }
+  
+  .hero-content-title {
+    margin-top: 1.5rem;
+    font-size: 1.8rem;
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+  }
+  
+  .hero-content-description {
+    margin-top: 1.2rem;
+    font-size: 1rem;
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .hero-content-cta {
+    background-color: #2f2872;
+    color: #ffffff;
+    border-radius: 3rem;
+    border: none;
+    padding-left: 1.3rem; padding-right: 1.3rem;
+    padding-top: 0.3rem; padding-bottom: 0.3rem;
+    margin-top: 1.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+    font-size: 0.8rem;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+  .hero-content-cta:hover {
+    text-decoration: none;
+    color: white;
+    transition: transform 0.3s ease;
+    background-color: #4b42a8; /* slightly lighter purple */
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(75, 66, 168, 0.6);
+    filter: blur();
+  }
+
+  
+  @media (max-width: 768px) {
+    .hero-bg{
+        padding-top: 10rem;
+    }
+    .triangle-image {
+        width: 60%;
+    }
+    .hero-content{
+        padding-top: 4rem;
+        margin-bottom: 10rem;
+    }
+    .brand-name-logo{
+        gap: 1rem;
+    }
+    .brand-name {
+        font-size: 3.5rem;
+    }
+    .logo-img {
+        width: 4rem;
+        margin-top: 3%;
+    }
+    .tagline {
+        font-size: 0.8rem;
+        margin-right: 5%;
+        margin-top: -1.4%;
+    }
+    .hero-content-container{
+        padding-left: 3rem; padding-right: 3rem;
+        padding-top: 1.8rem;
+    }
+    .hero-content-title {
+      font-size: 1.7rem;
+    }
+    .hero-content-description {
+      font-size: 0.9rem;
+      margin-top: 2rem;
+    }
+    .hero-content-cta {
+      font-size: 0.88rem;
+      margin-top: 4rem;
+    }
+  }
+  

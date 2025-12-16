@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
+
 body {
   font-family: "Poppins", sans-serif;
   background: linear-gradient(180deg, #f5f7ff, #eef2ff);
@@ -13,7 +18,7 @@ body {
 
 /* Wrapper keeps content centered on desktop */
 .qr-wrapper {
-  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   justify-content: center;
 }
@@ -22,9 +27,9 @@ body {
 .qr-card {
   width: 100%;
   max-width: 420px;
-  min-height: 100vh;   /* 🔴 KEY LINE */
+  min-height: 100dvh;   /* 🔴 KEY LINE */
   border-radius: 0;    /* Full screen look */
-  padding: 60px 20px;
+  /* padding: 60px 20px; */
 }
 
 /* Logo */

@@ -29,7 +29,7 @@ body {
   max-width: 420px;
   min-height: 100dvh;   /* 🔴 KEY LINE */
   border-radius: 0;    /* Full screen look */
-  /* padding: 60px 20px; */
+  padding: 60px 20px;
 }
 
 /* Logo */
@@ -113,6 +113,7 @@ body {
   margin-top: 50px;
   font-size: 0.75rem;
   color: #888;
+  text-align: center;
 }
 
 /* Extra small devices */

@@ -13,20 +13,18 @@ body {
 
 /* Wrapper keeps content centered on desktop */
 .qr-wrapper {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  padding: 0px;
 }
 
 /* Card */
 .qr-card {
   width: 100%;
-  max-width: 420px; /* mobile portrait width */
-  background: #ffffff;
-  border-radius: 20px;
-  padding: 70px 20px;
-  text-align: center;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+  max-width: 420px;
+  min-height: 100vh;   /* 🔴 KEY LINE */
+  border-radius: 0;    /* Full screen look */
+  padding: 60px 20px;
 }
 
 /* Logo */
@@ -115,5 +113,13 @@ body {
 
   .brand-name {
     font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .qr-card {
+    min-height: auto;
+    border-radius: 20px;
+    margin: 20px 0;
   }
 }

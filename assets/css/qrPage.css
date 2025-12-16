@@ -62,6 +62,7 @@ body {
   font-family: "Alexandria", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    text-align: center;
 }
 
 .brand-desc {
@@ -73,6 +74,7 @@ body {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+    text-align: center;
 }
 
 /* Links */
@@ -86,7 +88,7 @@ body {
 .link-btn {
   display: block;
   width: 100%;
-  padding: 16px 16px;
+  padding: 20px 16px;
   border-radius: 100px;
   text-decoration: none;
   font-size: 0.8rem;
@@ -94,6 +96,7 @@ body {
   background: #2f2872c5;   /* deep indigo */
   color: #ffffff;
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+  text-align: center;
 }
 
 

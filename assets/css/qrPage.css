@@ -102,8 +102,10 @@ body {
 
 /* Hover (desktop only) */
 .link-btn:hover {
-  background: #241f5c;
+  background: #2f2872;
   transform: translateY(-2px);
+  color: white;
+  text-decoration: none;
 }
 
 /* Footer */

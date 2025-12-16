@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #f5f7ff, #eef2ff);
+  color: #111;
+  min-height: 100vh;
+}
+
+/* Wrapper keeps content centered on desktop */
+.qr-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Card */
+.qr-card {
+  width: 100%;
+  max-width: 420px; /* mobile portrait width */
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 70px 20px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* Logo */
+.logo-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2px;
+
+  width: 90px;
+  height: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  background: #ffffff; /* optional but clean */
+}
+
+.logo-box img {
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
+}
+
+
+/* Brand */
+.brand-name {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2f2872;
+  margin-bottom: 8px;
+  font-family: "Alexandria", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.brand-desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 60px;
+  line-height: 1.2;
+  font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Links */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* Buttons */
+.link-btn {
+  display: block;
+  width: 100%;
+  padding: 16px 16px;
+  border-radius: 100px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background: #2f2872c5;   /* deep indigo */
+  color: #ffffff;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+
+/* Hover (desktop only) */
+.link-btn:hover {
+  background: #241f5c;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer-text {
+  margin-top: 50px;
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* Extra small devices */
+@media (max-width: 360px) {
+  .qr-card {
+    padding: 25px 15px;
+  }
+
+  .brand-name {
+    font-size: 1.4rem;
+  }
+}

@@ -10,16 +10,7 @@
     "date": "2025-12-20",
     "artists": ["Bloodywood", "Avial", "Arogya", "Jhanu", "Crishna", "Iham Kavyam"],
     "gallery": [
-      "assets/images/events/uforia/img2.jpg",
-      "assets/images/events/uforia/img3.jpg",
-      "assets/images/events/uforia/img4.jpg",
-      "assets/images/events/uforia/img5.jpg",
-      "assets/images/events/uforia/img6.jpg",
-      "assets/images/events/uforia/img7.jpg",
-      "assets/images/events/uforia/img8.jpg",
-      "assets/images/events/uforia/img9.jpg",
-      "assets/images/events/uforia/img10.jpg",
-      "assets/images/events/uforia/img11.jpeg",
+      
       "assets/images/events/uforia/img12.jpeg",
       "assets/images/events/uforia/img13.jpeg",
       "assets/images/events/uforia/img14.jpeg",
@@ -38,7 +29,18 @@
       "assets/images/events/uforia/img27.jpeg",
       "assets/images/events/uforia/img28.jpeg",
       "assets/images/events/uforia/img29.jpeg",
-      "assets/images/events/uforia/img30.jpeg"
+      "assets/images/events/uforia/img30.jpeg",
+      "assets/images/events/uforia/img11.jpeg",
+      "assets/images/events/uforia/img2.jpg",
+      "assets/images/events/uforia/img3.jpg",
+      "assets/images/events/uforia/img4.jpg",
+      "assets/images/events/uforia/img5.jpg",
+      "assets/images/events/uforia/img6.jpg",
+      "assets/images/events/uforia/img7.jpg",
+      "assets/images/events/uforia/img8.jpg",
+      "assets/images/events/uforia/img9.jpg",
+      "assets/images/events/uforia/img10.jpg"
+      
     ],
     "bookingLink": "https://in.bookmyshow.com/events/uforia/ET00468281?webview=true",
     "website": "https://uforiaofficial.com",

@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Gallery
       const gallery = document.getElementById("gallery-images");
       gallery.innerHTML = "";
-      event.gallery.slice(0, 15).forEach(img => {
+      event.gallery.slice(0, 30).forEach(img => {
         const image = document.createElement("img");
         image.src = img;
         gallery.appendChild(image);
